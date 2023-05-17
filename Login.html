@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Киберспорт спб, Киберспорт, Игры с друзьями, профессиональный киберспорт">
+        <meta name="keywords" content="Киберспорт в спб">
+        <meta name="keywords" content="Киберспорт в санкт-петербурге">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="11.js"></script>
+
+        <title>Компьютерный клуб Temple</title>
+        <script>
+            var schet = 0;
+            function leftbut() {
+              if (schet > 0) {
+                schet--;
+                document.getElementById("fotoL").src = "images/gallary/1-" + (schet+1) + ".jpg";
+                document.getElementById("fotoC").src = "images/gallary/1-" + (schet+2) + ".jpg";
+                document.getElementById("fotoR").src = "images/gallary/1-" + (schet+3) + ".jpg";
+              }
+            }
+            function rightbut() {
+              if (schet < 2) {
+                schet++;
+                document.getElementById("fotoL").src = "images/gallary/1-" + (schet+1) + ".jpg";
+                document.getElementById("fotoC").src = "images/gallary/1-" + (schet+2) + ".jpg";
+                document.getElementById("fotoR").src = "images/gallary/1-" + (schet+3) + ".jpg";
+              }
+            }
+            function fotoClick(number) {
+              document.getElementById("fotoM").src = "images/gallary/1-" + (schet+number) + ".jpg";
+            }
+        </script>
+
+    </head>
+    <body>
+	
+        <header id="pageHeader"><a href="index.html"><img src="images/logo1.png" class="logo"></a></header>
+        <nav id="mainNav">
+                <div class="menu">
+                    <div class="art" onmouseover="show_Object('div1')" onmouseout="hide_Object('div1')">ЗАЛЫ</div>
+                    <div id="div1" onmouseover="show_Object('div1')" onmouseout="hide_Object('div1')" class="hide">
+                        <a href="Econom_zal.html" target="_self">ЭКОНОМ ЗАЛ</a>
+                        <br>
+                        <a href="VIP_zal.html">V.I.P ЗАЛ</a>
+                        <br>
+                        <a href="Bootcamp_zal.html">BOOTCAMP ЗАЛ</a>
+                    </div>
+            </div>
+            <div class="menu" id="adapt">
+                <div class="art"><a href="Kompi.html">КОМПЛЕКТУЮЩИЕ</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="rules.html">ПРАВИЛА</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="info.html">КОНТАКТЫ</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="Enter.php">ВХОД</a></div>
+            </div>
+
+        </nav>
+        <article id="mainArticle">
+            <p><b>Temple - это Киберспорт в центре Санкт-Петербурга</b></p>
+                <p>16 просторных и разнообразных залов для игры! Собственный система аккаунтов и постоянных посетителей.<br>
+                Топовое железо и сотрудничество с одной из ведущих компаний в индустрии - HyperX. Ну, и конечно, незабываемый экспириенс от прикосновения к топовому киберспорту</p>
+
+            <div id="gallary">
+              <div>
+                <img src="images/VIPzal/VIP3.jpg" id="fotoM" alt="Диафильм">
+              </div>
+              <div>
+                <img class="button" src="images/gallary/left.png" onClick="leftbut()" alt="Предыдущее фото">
+                <img src="images/gallary/1-1.jpg" id="fotoL" onClick="fotoClick(1)" alt="Фото">
+                <img src="images/gallary/1-2.jpg" id="fotoC" onClick="fotoClick(2)" alt="Фото">
+                <img src="images/gallary/1-3.jpg" id="fotoR" onClick="fotoClick(3)" alt="Фото">
+                <img class="button" src="images/gallary/right.png" onClick="rightbut()" alt="Следующее фото">
+              </div>
+            </div>
+
+            <p><b>Компьютерный клуб №1 в Санкт-Петербурге</b></p>
+            <p>Что может быть лучше, чем провести свой выходной гуляя с друзьями? Только провести это время в 
+                открытом компьютерном клубе! Приятные цены, качественное оборудование, большой выбор игр и крутая
+                 атмосфера в нашем компьютерном клубе в спб. Проведи время с друзьями весело, и незабываемо играя в любимые игры,
+                  получив заряд эмоций и впечатлений!
+            <div class="grid">
+                <div id="back">
+                    <img id="rotator" src="images/back/1.png">
+                    <p> Мы долго работали над тем, что бы у нас вы смогли чувствовать себя комфортно и погрузиться в мир игр ;) </p>
+                </div>
+                <div id="cam">
+                    <img src="images/Komp/1.png">
+                    <p>Мощные компьютеры, на которых можно комфортно играть во все новинки на комфортном количестве кадров в секунду ;)</p>
+                </div>
+                <div id="tec">
+                    <img src="images/Admin/1.png">
+                    <p>Вы всегда можете рассчитывать на помощь администратора если вдруг, что-то пойдет не так ;)</p>
+                </div>
+            </div>
+        </article>
+        <footer id="pageFooter">
+            <hr>
+            <a href="#"><img src="images/vk.png" class="social"></a>
+            <a href="#"><img src="images/tg.png" class="social"></a>
+            <a href="#"><img src="images/yt.png" class="social"></a>
+            <br>
+            <img src="images/logo1.png" class="logo" style=" height:8vh">
+        </footer>
+    </body>
+</html>

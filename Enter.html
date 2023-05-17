@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="Zali.css">
+
+        <title>"Общий"</title>
+        <script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="11.js"></script>
+
+    </head>
+    <body>
+        <header id="pageHeader"><a href="index.html"><img src="images/logo1.png" class="logo"></a></header>
+        <nav id="mainNav">
+                <div class="menu">
+                <div class="art" onmouseover="show_Object('div1')" onmouseout="hide_Object('div1')">Залы</div>
+                <div id="div1" onmouseover="show_Object('div1')" onmouseout="hide_Object('div1')" class="hide">
+                <a href="#" target="_self">Общий Зал</a>
+                <br>
+                <a href="VIP_zal.html">VIP Зал</a>
+                <br>
+                <a href="Bootcamp_zal.html">Bootcamp Зал</a>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="Kompi.html">Переферия</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="rules.html">Правила</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="info.html">Контакты</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="Enter.html">Вход</a></div>
+            </div>
+
+        </nav>
+<div id="container_demo" >
+    <a class="hiddenanchor" id="tosubscribe"></a>
+    <a class="hiddenanchor" id="tologin"></a>
+    <div id="wrapper">
+        <div id="login" class="animate form">
+            <form  action="mysuperscript.php" autocomplete="on">
+                <h1>Log in</h1>
+                <p>
+                    <label for="username" class="uname" data-icon="u" > Логин </label><p></p>
+                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                </p>
+                <p>
+                    <label for="password" class="youpasswd" data-icon="p"> Пароль </label>
+                    <p></p>
+                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                </p>
+                <p class="keeplogin">
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                    <label for="loginkeeping">Не выходить из системы</label>
+                </p>
+                <p class="login button">
+                    <input type="submit" value="Войти" />
+                </p>
+                <p class="change_link">
+                    Хотите зарегистрироваться ?
+                    <a href="#tosubscribe" class="to_subscribe">Зарегистрироваться</a>
+                </p>
+            </form>
+        </div>
+ 
+        <div id="subscribe" class="animate form">
+            <form  action="mysuperscript.php" autocomplete="on">
+                <h1> Регистрация </h1>
+                <p>
+                    <label for="usernamesignup" class="uname" data-icon="u">Логин</label><p></p>
+                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                </p>
+                <p>
+                    <label for="emailsignup" class="youmail" data-icon="e" > Адрес электронной почты</label><p></p>
+                    <input id="emailsignup" name="emailsignup" required="required" type="text" placeholder="mysupermail@mail.com"/>
+                </p>
+                <p>
+                    <label for="passwordsignup" class="youpasswd" data-icon="p">Пароль </label><p></p>
+                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                <p>
+                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Подтверждение пароля </label><p></p>
+                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                <p class="signin button">
+                    <input type="submit" value="Зарегистрироваться"/>
+                </p>
+                <p class="change_link">
+                    Уже зарегистрированы ?
+                    <a href="#tologin" class="to_subscribe"> Войти </a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>

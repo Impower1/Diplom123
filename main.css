@@ -1,0 +1,146 @@
+html {
+    background-color: lightblue;
+}
+header {
+	background-color: aquamarine;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "footer";
+    grid-template-rows: 0.5fr 0.2fr 8fr 0.5fr;
+    grid-template-columns:1fr;
+    grid-gap: 1vh;
+    font-family: "candara";
+ }
+header, footer, article, div {
+    padding: 0;
+    text-align: center
+}
+nav{
+    padding: 0 25vw;
+    text-align: center;
+    color: 7D7A74
+}
+#pageHeader {
+    grid-area: header;
+}
+#pageFooter {
+    grid-area: footer;
+}
+#mainArticle {
+    grid-area: article;
+}
+#mainNav {
+    grid-area: nav;
+}
+.logo {
+    height:10vh;
+    padding: 1vw;
+}
+.social {
+    height:30px;
+    padding: 0 1vw;
+}
+.art {
+  background-color: #7D7A74;
+  font-weight: 600;
+  padding: 15px;
+  font-family: "helvetica";
+  letter-spacing: 1px;
+  color: #E8DBC8
+}
+.menu{
+  width: 20%;
+  float: left;
+  margin: 3px auto;
+  text-align: center;
+}
+.menu a, .art {
+  font-size: 1vw
+}
+.hide {
+  visibility: hidden;
+}
+.show {
+  font-family: "helvetica";
+  font-weight: 500;
+  visibility: visible;
+  background-color: #FDDE9F;
+  padding: 5px;
+  line-height: 5em
+}
+hr {
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+}
+#div1 {
+    position: absolute;
+    z-index: 1;
+}
+#div1 a {
+    color: #7D6E4F
+}
+a {
+  text-decoration: none;
+}
+a:link, a:visited {
+    color: #E8DBC8
+}
+@media (min-width: 1250px) and (max-width: 1600px) {
+    .menu a, .art {
+        font-size: 0.8vw
+    }
+    #div1 {
+        width: 11vw;
+    }
+}
+@media (min-width: 800px) and (max-width: 1250px) {
+    .menu a, .art {
+        font-size: 0.8vw
+    }
+    html {
+        margin: 0;
+        padding : 0  
+        
+    }
+    }
+    .art {
+        padding: 10px;
+    }
+    .logo {
+        height:8vh;
+    }
+    #div1 {
+        width: 10vw;
+    }
+
+@media (max-width: 800px) {
+    .menu a, .art {
+        font-size: 2vh;
+    }
+    nav{
+        padding: 0;
+    }
+    .menu{
+        width: 100%;
+    }
+    .logo {
+        height:6vh;
+    }
+    html {
+        margin: 0;
+        padding : 0 
+ }
+     #div1 {
+        width: 100%;
+        visibility: visible;
+
+        background-color: #FDDE9F;
+        position: static;
+        line-height: 2em
+    }
+}

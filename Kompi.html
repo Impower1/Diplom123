@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="Kompi.css">
+
+        <title>КОМПЛЕКТУЮЩИЕ </title>
+
+        <script>
+            function show_Object(name) {
+              document.getElementById(name).className = 'show';
+            }
+            function hide_Object(name) {
+              document.getElementById(name).className = 'hide';
+            }
+            function inf(elem) {
+            if (elem.id == "i1") {
+                document.getElementById("p1").style.display = "block";
+                document.getElementById("p2").style.display = "none";
+                document.getElementById("p3").style.display = "none";
+                document.getElementById("p4").style.display = "none";
+                document.getElementById("p5").style.display = "none";
+            };
+
+            if (elem.id == "i2") {
+                document.getElementById("p2").style.display = "block";
+                document.getElementById("p1").style.display = "none";
+                document.getElementById("p3").style.display = "none";
+                document.getElementById("p4").style.display = "none";
+                document.getElementById("p5").style.display = "none";
+            };
+
+            if (elem.id == "i3") {
+                document.getElementById("p3").style.display = "block";
+                document.getElementById("p1").style.display = "none";
+                document.getElementById("p2").style.display = "none";
+                document.getElementById("p4").style.display = "none";
+                document.getElementById("p5").style.display = "none";
+            };
+
+            if (elem.id == "i4") {
+                document.getElementById("p4").style.display = "block";
+                document.getElementById("p1").style.display = "none";
+                document.getElementById("p2").style.display = "none";
+                document.getElementById("p3").style.display = "none";
+                document.getElementById("p5").style.display = "none";
+            };
+
+            if (elem.id == "i5") {
+                document.getElementById("p5").style.display = "block";
+                document.getElementById("p1").style.display = "none";
+                document.getElementById("p2").style.display = "none";
+                document.getElementById("p3").style.display = "none";
+                document.getElementById("p4").style.display = "none";
+            };
+        };
+        </script>
+
+    </head>
+    <body>
+        <header id="pageHeader"><a href="index.html"><img src="images/logo1.png" class="logo"></a></header>
+        <nav id="mainNav">
+                <div class="menu">
+                <div class="art" onmouseover="show_Object('div1')" onmouseout="hide_Object('div1')">ЗАЛЫ</div>
+                <div id="div1" onmouseover="show_Object('div1')" onmouseout="hide_Object('div1')" class="hide">
+                <a  href="Econom_zal.html">ЭКОНОМ ЗАЛ</a>
+                <br>
+                <a href="VIP_zal.html">ВИП ЗАЛ</a>
+                <br>
+                <a href="Bootcamp_zal.html">BOOTCAMP ЗАЛ</a>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="#">КОМПЛЕКТУЮЩИЕ</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="rules.html">ПРАВИЛА</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="info.html">КОНТАКТЫ</a></div>
+            </div>
+            <div class="menu">
+                <div class="art"><a href="Enter.html">ВХОД</a></div>
+            </div>
+
+        </nav>
+        <article id="mainArticle">
+            <div id="menu" >
+            <ul>
+                <li><a href="#">Компьютеры</a>
+                    <ul id="submenu_1">
+                        <li>
+                            <a id="i1" onclick="inf(this);">Железо</a>
+                        </li>
+                        <li>
+                            <a id="i2" onclick="inf(this);">Мониторы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Переферия</a>
+                    <ul id="submenu_2">
+                        <li>
+                            <a id="i3" onclick="inf(this);">Клава и Мышь</a>
+                        </li>
+                        <li>
+                            <a id="i4" onclick="inf(this);">Наушники</a>
+                        </li>
+                        <li>
+                            <a id="i5" onclick="inf(this);">Кресла</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+            <div id="fullinf" class="sod">
+                <div id="p1">
+                    <p>
+                      Все компьютеры застрахованы, во всех залах ведется постоянное видеонаблюдение
+                    </p>
+                    <div class="ph">
+                        <div>
+                            <img src="images/Bogatstvo/PC1.jpeg">
+                            <p>
+                            Вип зал
+                            <br><br>RTX 2070 Super 8 GB, Ryzen 3600, 2X8 GB 3000 MHz </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/PC2.jpg">
+                            <p>
+                            Обычный зал
+                            <br><br> GTX 1660 6 GB, Ryzen 2600, 2X8 GB 2666 MHz </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/PC3.jpg">
+                            <p>
+                            Bootcamp зал 
+                            <br>
+                         <br> RTX 2080TI 11 GB, Ryzen 3900, 4X8 GB 3300 MHz </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="p2" >
+                    <p>
+                        Все компьютеры застрахованы, во всех залах ведется постоянное видеонаблюдение
+                    </p>
+                    <div class="ph">
+                        <div>
+                            <img src="images/Bogatstvo/Monik1.jpg">
+                            <p> Эконом зал 
+                                <br> <br> Монитор AOC 144 Hz, 1 ms, 24"
+                            <br> <br> 
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/Monik2.jpg">
+                            <p> Вип зал 
+                                <br> <br> Монитор AOC 160 Hz, 1 ms, 25"
+                            <br> <br> 
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/Monik3.jpg">
+                            <p> Bootcamp зал 
+                                <br> <br> Монитор ACER 240 Hz, 1 ms, 26"
+                            <br>  <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="p3">
+                    <p>
+                        В каждом из наших залов стоят топовые мышка и клавиатура, не запрещено приносить свою переферию. 
+                        Для подключения своей переферии обращайтесь к администратору. Также у нас эксклюзивное соглашение с компанией HyperX, 
+                        так что во всех залах стоят одинаковые топовые клавиатура и мышка.
+                    </p>
+                    
+                    <div class="ph">
+                        <div>
+                            <img src="images/Bogatstvo/Mouse.jpg">
+                            <p>
+                            Мышь
+                            <br><br>HyperX Pulsefire Haste </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/Klava.jpg">
+                            <p>
+                            Клавиатура 
+                            <br><br>HyperX Alloy Origins </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="p4">
+                    <p> 
+                        У нас представлены топовые наушники от нашего спонсора компании HyperX
+                        </p> <br>
+                    <div class="ph">
+                        <div>
+                            <img src="images/Bogatstvo/Ushi.jpg">
+                            <p>
+                              <br>  HyperX Cloud Alpha Blackout </p>
+                            
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/Ushi2.jpg">
+                            <p>
+                              <br>  HyperX Cloud Alpha
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="p5">
+                    <p> Удобнейшие кресла помогут не навредить вашей спине в процессе ожесточенных баталий на полях сражений)
+                    </p>
+                    <div class="ph">
+                        
+                        <div>
+                            <img src="images/Bogatstvo/Kreslo1.jpg">
+                            <p>
+                                <br>DXRacer
+                             </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/Kreslo2.jpg">
+                            <p>
+                           <br> Arozzi
+                             </p>
+                        </div>
+                        <div>
+                            <img src="images/Bogatstvo/Kreslo3.jpg">
+                            <p>
+                           <br> Sharkoon
+                             </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </article>
+        <footer id="pageFooter">
+            <hr>
+            <img src="images/vk.png" class="social">
+            <img src="images/tg.png" class="social">
+            <img src="images/yt.png" class="social">
+            <br>
+            <img src="images/logo1.png" class="logo">
+
+
+        </footer>
+    </body>
+</html>

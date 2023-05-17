@@ -1,0 +1,88 @@
+body {
+    grid-template-rows: 0.5fr 0.3fr 4fr 0.5fr;
+ }
+#mainArticle div{
+    line-height: 1.5em;
+    font-size: 2.5vh;
+}
+.text2cols {
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    column-count: 2;
+    background: #FDDE9F;
+    align:justify
+}
+.text2cols > p {
+    margin: 1% 5%;
+    font-size: 2vh;
+    text-align: justify
+}
+/* Размеры слайдера */
+.slider {
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+.box-top {
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    color: #616161;
+    float: left;
+    position: relative;
+    left: 0;
+}
+
+.box-top ul li {
+    height: 100%;
+    padding: 0 10px 0 0;
+    display: inline-block;
+    float:left;
+}
+
+.slider .box-top img {
+    height: 100%;
+}
+
+.box-top ul {
+    height:100%;
+    padding: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-rows: 0.2fr 1fr 4.5fr 0.5fr;
+    }
+    .slider {
+    height: 30vh;
+    margin:-2%;
+    }
+    .box-top {
+    width: 100vw;
+    }
+    .box-top ul {
+    padding: -10px;
+    }
+    .box-top ul li {
+        padding: 0;
+    }
+    .text2cols {
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+    column-count: 1;
+}
+    .text2cols > p {
+        margin: 5% 5%;
+        font-size: 1.8vh;
+        text-align: justify
+    }
+    #mainArticle div{
+    font-size: 2vh;
+    }
+    p {
+    margin: 5vw
+    }
+}

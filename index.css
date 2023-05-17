@@ -1,0 +1,73 @@
+#fotoM{
+height: 75vh
+}
+#fotoL, #fotoR, #fotoC {
+height: 15vh
+}
+.button {
+height: 4vh;
+vertical-align: 2.9em;
+}
+p b {
+font-size: 150%;
+}
+header {
+	background-color: aquamarine;
+}
+
+p {
+margin-inline-start: 10%;
+margin-inline-end: 10%;
+line-height: 1.5em;
+font-size: 2.5vh;
+}
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 128px;
+    grid-gap: 10px;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%
+}
+.grid img {
+    width: 100%
+}
+.grid p {
+    margin:0;
+    font-size: 1.8vh;
+}
+@media (max-width: 800px) {
+    body {
+        grid-template-rows: 0.2fr 1fr 6fr 0.5fr;
+    }
+    p {
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+    font-size: 2vh;
+    }
+    .button {
+    height: 3vh;
+    vertical-align: 2em;
+    }
+    .grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%
+    }
+    .grid p {
+    margin:0;
+    font-size: 1.8vh;
+    }
+    #fotoM{
+    width: 99vw;
+    height: auto
+    }
+    #fotoL, #fotoR, #fotoC {
+        height: 15vw;
+        vertical-align: 1em;
+    }
+}
+
